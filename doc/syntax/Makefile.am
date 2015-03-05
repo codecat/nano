@@ -1,39 +1,73 @@
-pkgdata_DATA =	asm.nanorc \
+pkgdata_DATA = apacheconf.nanorc \
+		asciidoc.nanorc \
+		asm.nanorc \
 		awk.nanorc \
-		changelog.nanorc \
-		cmake.nanorc \
 		c.nanorc \
+		cmake.nanorc \
+		coffeescript.nanorc \
+		colortest.nanorc \
+		conf.nanorc \
+		csharp.nanorc \
 		css.nanorc \
-		debian.nanorc \
-		default.nanorc \
+		cython.nanorc \
+		dot.nanorc \
+		email.nanorc \
+		erb.nanorc \
+		fish.nanorc \
 		fortran.nanorc \
 		gentoo.nanorc \
+		git.nanorc \
+		gitcommit.nanorc \
+		glsl.nanorc \
 		go.nanorc \
 		groff.nanorc \
+		haml.nanorc \
 		html.nanorc \
+		ini.nanorc \
+		inputrc.nanorc \
 		java.nanorc \
 		javascript.nanorc \
+		js.nanorc \
 		json.nanorc \
+		keymap.nanorc \
+		kickstart.nanorc \
+		ledger.nanorc \
+		lisp.nanorc \
 		lua.nanorc \
 		makefile.nanorc \
 		man.nanorc \
-		mgp.nanorc \
+		markdown.nanorc \
+		mpdconf.nanorc \
 		mutt.nanorc \
 		nanorc.nanorc \
-		objc.nanorc \
-		ocaml.nanorc \
+		nginx.nanorc \
 		patch.nanorc \
+		peg.nanorc \
 		perl.nanorc \
 		php.nanorc \
+		pkg-config.nanorc \
+		pkgbuild.nanorc \
 		po.nanorc \
 		pov.nanorc \
+		privoxy.nanorc \
+		puppet.nanorc \
 		python.nanorc \
+		reST.nanorc \
+		rpmspec.nanorc \
 		ruby.nanorc \
+		scala.nanorc \
+		sed.nanorc \
 		sh.nanorc \
-		spec.nanorc \
+		sql.nanorc \
+		systemd.nanorc \
 		tcl.nanorc \
 		tex.nanorc \
-		texinfo.nanorc \
-		xml.nanorc
+		vala.nanorc \
+		vi.nanorc \
+		xml.nanorc \
+		xresources.nanorc \
+		yaml.nanorc \
+		yum.nanorc \
+		zsh.nanorc
 
 EXTRA_DIST = $(pkgdata_DATA)

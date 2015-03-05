@@ -1,0 +1,39 @@
+pkgdata_DATA =	asm.nanorc \
+		awk.nanorc \
+		changelog.nanorc \
+		cmake.nanorc \
+		c.nanorc \
+		css.nanorc \
+		debian.nanorc \
+		default.nanorc \
+		fortran.nanorc \
+		gentoo.nanorc \
+		go.nanorc \
+		groff.nanorc \
+		html.nanorc \
+		java.nanorc \
+		javascript.nanorc \
+		json.nanorc \
+		lua.nanorc \
+		makefile.nanorc \
+		man.nanorc \
+		mgp.nanorc \
+		mutt.nanorc \
+		nanorc.nanorc \
+		objc.nanorc \
+		ocaml.nanorc \
+		patch.nanorc \
+		perl.nanorc \
+		php.nanorc \
+		po.nanorc \
+		pov.nanorc \
+		python.nanorc \
+		ruby.nanorc \
+		sh.nanorc \
+		spec.nanorc \
+		tcl.nanorc \
+		tex.nanorc \
+		texinfo.nanorc \
+		xml.nanorc
+
+EXTRA_DIST = $(pkgdata_DATA)

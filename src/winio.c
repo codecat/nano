@@ -2311,10 +2311,10 @@ void statusbar(const char *msg, ...)
     if (interface_color_pair[STATUS_BAR].bright)
 	wattron(bottomwin, A_BOLD);
     wattron(bottomwin, interface_color_pair[STATUS_BAR].pairnum);
-    waddstr(bottomwin, "[ ");
+    //waddstr(bottomwin, "[ ");
     waddstr(bottomwin, foo);
     free(foo);
-    waddstr(bottomwin, " ]");
+    //waddstr(bottomwin, " ]");
     wattroff(bottomwin, A_BOLD);
     wattroff(bottomwin, interface_color_pair[STATUS_BAR].pairnum);
     wnoutrefresh(bottomwin);
@@ -3345,7 +3345,6 @@ void do_cursorpos(bool constant)
     char c;
     size_t i, cur_xpt = xplustabs() + 1;
     size_t cur_lenpt = strlenpt(openfile->current->data) + 1;
-    int linepct, colpct, charpct;
 
     assert(openfile->fileage != NULL && openfile->current != NULL);
 
@@ -3367,18 +3366,12 @@ void do_cursorpos(bool constant)
 
     /* Display the current cursor position on the statusbar, and set
      * disable_cursorpos to FALSE. */
-    linepct = 100 * openfile->current->lineno /
-	openfile->filebot->lineno;
-    colpct = 100 * cur_xpt / cur_lenpt;
-    charpct = (openfile->totsize == 0) ? 0 : 100 * i /
-	openfile->totsize;
-
     statusbar(
-	_("line %ld/%ld (%d%%), col %lu/%lu (%d%%), char %lu/%lu (%d%%)"),
+	_("line %ld / %ld   col %lu / %lu   char %lu / %lu"),
 	(long)openfile->current->lineno,
-	(long)openfile->filebot->lineno, linepct,
-	(unsigned long)cur_xpt, (unsigned long)cur_lenpt, colpct,
-	(unsigned long)i, (unsigned long)openfile->totsize, charpct);
+	(long)openfile->filebot->lineno,
+	(unsigned long)cur_xpt, (unsigned long)cur_lenpt,
+	(unsigned long)i, (unsigned long)openfile->totsize);
 
     disable_cursorpos = FALSE;
 }
